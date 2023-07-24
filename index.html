@@ -23,7 +23,7 @@
   }
 
   async function resumableUpload(e) {
-    const webAppsUrl = "https://script.google.com/macros/s/###/exec"; // <--- Please set the URL of the deployed Web Apps.
+    const webAppsUrl = "https://script.google.com/macros/s/AKfycbwBNmFzJOZX5LH-5cxMu2xovuo4oPkHLHcgENc8KjkRc9hPRyhE5bE3o6zcYno71uGP/exec"; // <--- Please set the URL of the deployed Web Apps.
 
     const url = `${webAppsUrl}?key=sampleKey&work=start`;
     const obj = JSON.parse(atob(await fetch(url).then((res) => res.text())));
